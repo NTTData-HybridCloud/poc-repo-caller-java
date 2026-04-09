@@ -1,0 +1,7 @@
+# PoC B - Java Configuration
+technology: java
+project_name: poc-b-java-app
+java_version: "17"
+build_tool: maven
+run_tests: true
+sonar_enabled: true
