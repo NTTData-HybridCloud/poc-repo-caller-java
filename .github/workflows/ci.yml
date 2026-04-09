@@ -1,0 +1,22 @@
+# APP REPO CI - poc-a-java
+# Calls the central reusable workflow.
+# config-file is optional: if not provided, only central defaults are used.
+
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  ci:
+    name: CI
+    uses: NTTData-HybridCloud/poc-central-pipelines/.github/workflows/java-ci.yml@main
+    with:
+      project-name: poc-java-app
+      config-file: config/poc-java-app.yml
+    secrets: inherit
