@@ -1,4 +1,4 @@
-# Configuration overrides for poc-java-app
+# Configuration overrides for poc-a-java-app
 java_version: "17"
 build_tool: "maven"
 run_tests: true

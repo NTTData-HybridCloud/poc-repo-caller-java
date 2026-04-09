@@ -2,7 +2,7 @@
 # Calls the central reusable workflow.
 # config-file is optional: if not provided, only central defaults are used.
 
-name: CI
+name: CI - PoC A
 
 on:
   push:
@@ -15,8 +15,8 @@ on:
 jobs:
   ci:
     name: CI
-    uses: NTTData-HybridCloud/poc-central-pipelines/.github/workflows/java-ci.yml@main
+    uses: NTTData-HybridCloud/poc-central-pipelines/.github/workflows/poc-a-java-ci.yml@main
     with:
-      project-name: poc-java-app
-      config-file: config/poc-java-app.yml
+      project-name: poc-a-java-app
+      config-file: config/poc-a-pipeline-config.yml
     secrets: inherit
